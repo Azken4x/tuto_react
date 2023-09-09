@@ -8,7 +8,19 @@ const Content = () => {
     { id: 3, checked: true, item: "item 3" },
   ]);
 
-  return <main></main>;
+  return (
+    <main>
+      <ul>
+        {items.map((item) => (
+          <li className="item" key={item.id}>
+            <input type="checkbox" checked={item.checked} />
+            <label>{item.item}</label>
+            <button>Delete</button>
+          </li>
+        ))}
+      </ul>
+    </main>
+  );
 };
 
 export default Content;
