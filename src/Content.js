@@ -16,9 +16,7 @@ const Content = () => {
           <li className="item" key={item.id}>
             <input type="checkbox" checked={item.checked} />
             <label>{item.item}</label>
-            <FaTrashAlt role="button" tabIndex="0">
-              Delete
-            </FaTrashAlt>
+            <FaTrashAlt role="button" tabIndex="0"></FaTrashAlt>
           </li>
         ))}
       </ul>
