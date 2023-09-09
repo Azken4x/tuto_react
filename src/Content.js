@@ -9,6 +9,10 @@ const Content = () => {
     { id: 3, checked: true, item: "item 3" },
   ]);
 
+  const handleCheck = (id) => {
+    console.log(`key: ${id}`);
+  };
+
   return (
     <main>
       <ul>
