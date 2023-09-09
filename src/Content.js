@@ -12,6 +12,7 @@ const Content = () => {
   };
 
   const handleClick = () => {
+    setCount(count + 1);
     console.log(count);
   };
   const handleClick2 = (name) => {
@@ -31,3 +32,5 @@ const Content = () => {
 };
 
 export default Content;
+
+//1.01.35
