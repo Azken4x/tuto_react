@@ -9,7 +9,6 @@ const Content = () => {
     const names = ["Mike", "Kevin", "Bob"];
     const int = Math.floor(Math.random() * 3);
     setName(names[int]);
-    console.log(name);
   };
 
   const handleClick = () => {
