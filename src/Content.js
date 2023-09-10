@@ -17,7 +17,7 @@ const Content = () => {
     localStorage.setItem("shoppinglist", JSON.stringify(listItems));
   };
 
-  const handleDelete = id;
+  const handleDelete = (id) => {};
 
   return (
     <main>
@@ -35,7 +35,11 @@ const Content = () => {
             >
               {item.item}
             </label>
-            <FaTrashAlt role="button" tabIndex="0"></FaTrashAlt>
+            <FaTrashAlt
+              onClick={() => handleDelete(item.id)}
+              role="button"
+              tabIndex="0"
+            ></FaTrashAlt>
           </li>
         ))}
       </ul>
