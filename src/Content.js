@@ -17,7 +17,11 @@ const Content = () => {
     localStorage.setItem("shoppinglist", JSON.stringify(listItems));
   };
 
-  const handleDelete = (id) => {};
+  const handleDelete = (id) => {
+    const listItems = items.filter((item) => {
+      item.id !== id;
+    });
+  };
 
   return (
     <main>
